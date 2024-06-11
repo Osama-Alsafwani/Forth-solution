@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "Honk";
+    src: url(./assets/fonts/static/HankenGrotesk-Bold.ttf) format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #0000000a;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    width: 45%;
+    max-width: 800px;
+    margin: 10% auto;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Honk';
+    color: hsl(241, 100%, 89%);
+
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: inherit;
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 20%,
+            hsl(241, 81%, 54%));
+    padding: 30px;
+}
+
+.result .re-circle {
+    margin: 10%;
+    font-size: 56px;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 60%, hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    padding: 38px;
+    align-self: center;
+}
+
+.result .re-circle>div:first-child {
+    margin: auto 15px;
+    color: hsl(221, 100%, 96%);
+}
+
+.result .re-circle>div:last-child {
+    font-size: 13px;
+    color: hsla(241.1, 100%, 89%, 0.64);
+}
+
+.result .re-great {
+    color: hsl(221, 100%, 96%);
+    font-size: 23px;
+    padding-bottom: 7px;
+}
+
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 30px;
+    margin-bottom: -32px;
+}
+
+.summary h1 {
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+
+.summary h1,
+.sum-span {
+    color: hsl(224, 30%, 27%);
+
+}
+
+.dis-fl {
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+    font-size: 15px;
+}
+
+
+.dis-fl>div:last-child {
+    /* width: 75%; */
+    position: absolute;
+    right: 9%;
+}
+
+/* Reaction */
+.reaction {
+    background-color: hsla(0, 100%, 67.1%, 0.05);
+}
+
+.reaction div:first-child,
+.first-reaction {
+    color: hsla(0, 100%, 67.1%);
+}
+
+.reaction .icon {
+    content: url(./assets/images/icon-reaction.svg);
+    margin-right: 10px;
+}
+
+/* Memory */
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+.memory div:first-child,
+.first-memory {
+    color: hsla(39, 100%, 56%);
+}
+
+.memory .icon {
+    content: url(./assets/images/icon-memory.svg);
+    margin-right: 10px;
+}
+
+/* Verval */
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+.verbal div:first-child,
+.first-verbal {
+    color: hsla(166, 100%, 37%);
+}
+
+.verbal .icon {
+    content: url(./assets/images/icon-verbal.svg);
+    margin-right: 10px;
+}
+
+/* Visual */
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.visual div:first-child,
+.first-visual {
+    color: hsla(234, 85%, 45%);
+}
+
+.visual .icon {
+    content: url(./assets/images/icon-visual.svg);
+    margin-right: 10px;
+}
+
+.btn {
+    margin-top: 25px;
+    background-color: hsl(224, 30%, 27%);
+    padding: 15px 9px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: hsl(221, 100%, 96%);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: hsla(256, 72%, 46%, 1);
+}
+
+@media (max-width:1074px) {
+    .container {
+        width: 60%;
+    }
+
+    .dis-fl>div:last-child {
+        right: 4%;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .result {
+        width: 100%;
+        margin-bottom: -18px;
+        border-top-left-radius: initial;
+        border-top-right-radius: initial;
+    }
+
+    .result p {
+        font-size: 13px;
+    }
+
+    .result .re-circle {
+        margin: 3% auto;
+        font-size: 40px;
+        padding: 25px;
+    }
+
+    .result .re-great {
+        font-size: 20px;
+    }
+
+    .dis-fl>div:last-child {
+        right: 7%;
+    }
+}
