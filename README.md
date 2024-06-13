@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Osama-Alsafwani/Forth-solution.git)
-- Live Site URL: [Add live site URL here](https://osama-alsafwani.github.io/Forth-solution/)
+- Solution URL: [Code here](https://github.com/Osama-Alsafwani/Forth-solution.git)
+- Live Site URL: [Website](https://osama-alsafwani.github.io/Forth-solution/)
 
 ## My process
 
